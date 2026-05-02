@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 // Update this once you deploy — used to resolve absolute OG/Twitter image URLs.
-const SITE_URL = "https://my-portfolio-indol-pi-55.vercel.app";
+const SITE_URL = "https://pragathi-garipally.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
