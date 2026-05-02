@@ -231,6 +231,37 @@ export default function Projects() {
             <ProjectCard key={project.title} project={project} index={i} />
           ))}
         </div>
+
+        {/* CTA strip — captures interest after browsing projects */}
+        <AnimateOnScroll delay={0.2}>
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-between gap-5 p-6 rounded-2xl bg-gradient-to-r from-surface via-surface to-accent/10 border border-border">
+            <div className="text-center sm:text-left">
+              <p className="text-base sm:text-lg font-semibold text-foreground">
+                Like what you see?
+              </p>
+              <p className="text-sm text-foreground/60 mt-1">
+                I&apos;m available for full-stack roles and freelance projects.
+              </p>
+            </div>
+            <div className="flex items-center gap-3 flex-shrink-0">
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-accent text-background text-sm font-semibold hover:bg-accent-light transition-colors"
+              >
+                Let&apos;s talk
+                <FiArrowRight size={14} />
+              </a>
+              <a
+                href="/Pragathi_Garipally_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-border hover:border-accent hover:text-accent text-foreground/80 text-sm font-semibold transition-colors"
+              >
+                Resume
+              </a>
+            </div>
+          </div>
+        </AnimateOnScroll>
       </div>
     </section>
   );

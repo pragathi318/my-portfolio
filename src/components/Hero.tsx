@@ -75,8 +75,12 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="mt-6 text-foreground/60 text-base md:text-lg leading-relaxed max-w-xl"
           >
-            Full-stack developer & Python enthusiast — React frontends, Node
-            APIs, and AI-powered experiences. Currently building at{" "}
+            Full-stack developer shipping{" "}
+            <span className="text-foreground/90 font-medium">
+              real client work
+            </span>{" "}
+            — 5 live sites, including an AI-powered mock-interview platform.
+            Currently building at{" "}
             <span className="text-foreground/90 font-medium">Welerix</span>.
           </motion.p>
 
