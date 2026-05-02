@@ -57,13 +57,14 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]"
           >
-            Hi, I&apos;m{" "}
+            I&apos;m{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent-light">
-              Pragathi.
+              Pragathi
             </span>
+            ,
             <br />
             <span className="text-foreground/90">
-              I build web apps that ship.
+              I build full-stack web apps with React, Node & AI.
             </span>
           </motion.h1>
 

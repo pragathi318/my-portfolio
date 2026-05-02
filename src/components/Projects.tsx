@@ -19,8 +19,15 @@ const projects: Project[] = [
   {
     title: "Skillsync.AI",
     description:
-      "AI-powered mock interview platform that generates dynamic technical and HR questions via the OpenAI API. Real-time feedback, animated UI, and a polished interview-prep flow built end-to-end.",
-    tech: ["Next.js", "React", "OpenAI API", "Tailwind CSS", "Framer Motion", "Three.js"],
+      "Job-seekers can't always afford interview coaching. Built an AI-powered mock-interview platform that generates personalized technical and HR questions on the fly via the OpenAI API, gives real-time feedback, and lets candidates practice end-to-end. Designed and shipped solo — from API integration to animated UI.",
+    tech: [
+      "Next.js",
+      "React",
+      "OpenAI API",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Three.js",
+    ],
     image: "/skillsync.png",
     github: "https://github.com/pragathi318/Skillsync.AI",
     live: "https://mock-interview-ai-beta.vercel.app/",
@@ -29,7 +36,7 @@ const projects: Project[] = [
   {
     title: "Sabroso — Global Cloud Kitchen",
     description:
-      "Full-stack food delivery platform connecting customers with home chefs across 30+ global cuisines. Backend handles auth, orders, and menu APIs with secure JWT-based sessions.",
+      "Home chefs lack a unified platform to reach customers. Built the backend for a food-delivery platform that connects customers with home chefs across 30+ cuisines — JWT-secured auth, menu management, and an order-placement flow built with Node, Express, and MongoDB.",
     tech: ["Node.js", "Express", "MongoDB", "JWT", "REST API"],
     image: "/sabroso.png",
     github: "https://github.com/pragathi318/sabroso-server",
@@ -38,7 +45,7 @@ const projects: Project[] = [
   {
     title: "Fortune Floors",
     description:
-      "Real estate website focused on a seamless browsing experience. Contributed to UI design, responsive layouts, and navigation improvements to reduce bounce rate.",
+      "Real estate client site needed a smoother browsing experience on mobile. Redesigned the UI, rebuilt navigation, and reworked layouts to be fully responsive — making property listings easier to scan on any device.",
     tech: ["HTML", "CSS", "JavaScript", "Responsive Design"],
     image: "/fortune-floors.png",
     live: "https://fortunefloors.com/",
@@ -46,7 +53,7 @@ const projects: Project[] = [
   {
     title: "Party Stories",
     description:
-      "Banquet hall website with responsive sections, clean content layouts, and an intuitive interface designed to drive event bookings.",
+      "Banquet hall business needed an online presence to drive event bookings. Built a responsive marketing site with clean content sections, venue galleries, and an intuitive navigation flow guiding visitors toward the inquiry CTA.",
     tech: ["HTML", "CSS", "JavaScript", "Responsive Design"],
     image: "/party-stories.png",
     live: "https://www.party-stories.com/",
