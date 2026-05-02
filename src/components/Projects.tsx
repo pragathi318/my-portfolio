@@ -106,26 +106,24 @@ function LaptopFrame({
 function ProjectCard({ project, index }: { project: Project; index: number }) {
   return (
     <AnimateOnScroll delay={index * 0.1}>
-      <div className="group relative rounded-2xl bg-surface border border-border hover:border-accent/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-accent/5 p-5">
-        {/* Laptop with screenshot */}
+      <div className="group relative flex flex-col rounded-2xl bg-surface border border-border hover:border-accent/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-accent/5 p-5">
+        {/* Laptop with screenshot — clean, no overlay */}
         <div className="relative px-3 pt-3 pb-1">
           <LaptopFrame src={project.image} alt={project.title}>
-            {/* Featured badge — sits on the laptop screen */}
             {project.featured && (
               <span className="absolute top-3 right-3 px-2.5 py-1 text-[10px] font-mono uppercase tracking-wider text-accent bg-background/80 backdrop-blur-md rounded-full border border-accent/30 z-10">
                 Featured
               </span>
             )}
-            {/* Hover description overlay — over the laptop screen */}
-            <div className="absolute inset-0 flex items-end p-5 bg-gradient-to-t from-background via-background/85 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <p className="text-xs sm:text-sm text-foreground/90 leading-relaxed">
-                {project.description}
-              </p>
-            </div>
           </LaptopFrame>
         </div>
 
-        {/* Footer — always visible */}
+        {/* Description — always visible below the laptop */}
+        <p className="mt-5 text-sm text-foreground/70 leading-relaxed">
+          {project.description}
+        </p>
+
+        {/* Footer: title + links + tech */}
         <div className="mt-5 pt-4 border-t border-border">
           <div className="flex items-start justify-between gap-3 mb-3">
             <h3 className="text-base font-semibold text-foreground group-hover:text-accent transition-colors">
